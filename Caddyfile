@@ -1,1 +1,4 @@
-:{$PORT} {`r`n    root * /app`r`n    php_server`r`n}
+:{$PORT} {
+    root * /app
+    php_server
+}
