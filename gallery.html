@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - MOU Information Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="stylegallery.css"/>
+  <script src="scriptgallery.js" defer></script>
+  
+  <!-- Embedded CSS styles -->
+  <style>
+    /* CSS Variables for colors and gradients */
+    :root {
+      --psg-blue: #002c77;
+      --psg-yellow: #f4c20d;
+      --light-bg: #f5f7fa;
+      --dark-text: #1a1a1a;
+      --light-text: #ffffff;
+      --gradient-primary: linear-gradient(135deg, #002c77, #004499, #0066cc);
+      --gradient-accent: linear-gradient(135deg, #f4c20d, #ffdd44, #ffeaa7);
+      --border-radius: 20px;
+      --section-padding: 20px 20px;
+      --shadow-light: 0 4px 6px rgba(0,0,0,0.05);
+      --shadow-medium: 0 8px 20px rgba(0,0,0,0.1);
+      --shadow-heavy: 0 12px 30px rgba(0,0,0,0.2);
+      --shadow-glow: 0 0 20px rgba(244, 194, 13, 0.4);
+    }
+
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body with animated background layers for depth and movement */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+      color: var(--dark-text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* Layered animated background for a dynamic visual depth */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: 
+        radial-gradient(circle at 20% 20%, rgba(0,44,119,0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(244,194,13,0.05) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(0,102,204,0.03) 0%, transparent 50%);
+      z-index: -2;
+      animation: float 25s ease-in-out infinite alternate;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23002c77' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      z-index: -1;
+      animation: drift 30s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+      50% { transform: translate(-20px, -15px) rotate(180deg) scale(1.05); }
+      100% { transform: translate(-10px, -10px) rotate(360deg) scale(0.95); }
+    }
+
+    @keyframes drift {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-60px); }
+    }
+
+    /* Particles floating for lively background */
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, var(--psg-blue), var(--psg-yellow));
+      animation: particles 15s linear infinite;
+      opacity: 0.6;
+    }
+    @keyframes particles {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      10% { opacity: 0.6; }
+      90% { opacity: 0.6; }
+      100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Navbar styling with dark blue background and white text/logo */
+    nav {
+      background: #001e55; /* Dark blue background */
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap; /* allow wrapping on small screens */
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: var(--shadow-medium), inset 0 1px 0 rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+      margin: 0 10px;
+    }
+
+    /* Make navbar text and icons white */
+    nav .nav-left,
+    nav .nav-links a {
+      color: #fff;
+    }
+
+    /* Style for the logo images to ensure visibility */
+    nav .nav-left img {
+      height: 50px;
+      border-radius: 12px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(255,255,255,0.1);
+      /* Optional: adjust filter if logos are dark */
+      /* filter: brightness(1); */
+    }
+
+    /* Style links in nav to be white and remove underline */
+    nav .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 25px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      font-weight: 600;
+    }
+    /* Hover effect for nav links */
+    nav .nav-links a:hover {
+      background: rgba(255,255,255,0.1);
+      color: #f4c20d; /* optional hover color */
+    }
+
+    /* Rest of your existing styles... (unchanged) */
+
+    /* Main content grid layout */
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      gap: 25px;
+    }
+
+    /* Section boxes with gradient backgrounds, shadows, and hover effects */
+    .section-box {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(25px) saturate(180%);
+      border-radius: var(--border-radius);
+      padding: var(--section-padding);
+      border-left: 6px solid var(--psg-blue);
+      box-shadow: var(--shadow-light),
+                  inset 0 1px 0 rgba(255,255,255,0.4),
+                  0 0 0 1px rgba(255,255,255,0.1);
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      margin-bottom: 25px;
+    }
+    /* ... rest of your styles remain unchanged ... */
+
+    /* Heading styles with gradient text and animated underline */
+    h1, h2, h3 {
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 800;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    /* ... rest of your heading styles ... */
+
+    /* Form groups, inputs, buttons, messages, table, footer styles ... (unchanged) */
+
+  </style>
+</head>
+<body>
+  <!-- Navbar with dark blue background and white text/logo -->
+  <nav>
+     <div class="nav-left">
+      <img src="uploads/images/logo1.png" alt="PSG Logo" />
+      <span class="nav-title">
+        PSG Polytechnic - MOU Portal
+        <img src="uploads/images/logo2.png" alt="Secondary Logo" />
+      </span>
+    </div>
+     <div class="nav-links">
+      <a href="home.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+      <a href="departments.php"><i class="fa-solid fa-building"></i> Departments</a>
+      <a href="upload.php"><i class="fa-solid fa-upload"></i> Upload</a>
+      <a href="view.php"><i class="fa-solid fa-eye"></i> View</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section-box">
+      <h2>Department Galleries</h2>
+      <ul class="gallery-list">
+        <li><a href="#" data-department="Information Technology">Information Technology</a></li>
+        <li><a href="#" data-department="Computer Networking">Computer Networking</a></li>
+        <li><a href="#" data-department="Electronics and Communication">Electronics and Communication</a></li>
+        <li><a href="#" data-department="Mechanical Engineering">Mechanical Engineering</a></li>
+      </ul>
+      <div class="images-container">
+        <h3>MOU Event Images Displayed Here</h3>
+        <div class="image-list"></div>
+        <p class="no-images-message" style="display: none;">No images available for this department.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PSG PTC Team. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

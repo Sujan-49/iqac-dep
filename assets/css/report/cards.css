@@ -1,0 +1,85 @@
+/* Summary Stat Cards */
+
+.report-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.report-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.02);
+}
+
+.report-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08); /* rgba of ink */
+  border-color: rgba(30, 58, 138, 0.2); /* rgba of royal */
+}
+
+.report-card .card-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--soft);
+  color: var(--royal);
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.report-card .card-label {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.report-card .card-value {
+  font-size: 22px;
+  color: var(--royal);
+  font-weight: 800;
+  font-family: Poppins, Inter, 'Segoe UI', Arial, sans-serif;
+  line-height: 1.2;
+}
+
+.report-card .card-note {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: auto;
+}
+
+/* Tone Variants */
+.report-card.tone-success .card-icon {
+  background: rgba(4, 120, 87, 0.1);
+  color: var(--success);
+}
+.report-card.tone-success .card-value {
+  color: var(--success);
+}
+
+.report-card.tone-danger .card-icon {
+  background: rgba(185, 28, 28, 0.1);
+  color: var(--danger);
+}
+.report-card.tone-danger .card-value {
+  color: var(--danger);
+}
+
+.report-card.tone-gold .card-icon {
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--gold);
+}
+.report-card.tone-gold .card-value {
+  color: var(--gold);
+}

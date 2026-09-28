@@ -1,0 +1,633 @@
+[2026-08-07 06:45:46] ==================================================
+[2026-08-07 06:45:46] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-07 06:45:46] ==================================================
+[2026-08-07 06:45:46] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-07 06:45:58]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-07 06:45:58]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-07 06:45:58] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-07 06:45:58]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-07 06:45:58] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-07 06:45:58]   - Student Count: 120 (Target: 120)
+[2026-08-07 06:45:58]   - Orphan Student Records: 0
+[2026-08-07 06:45:58]   - Orphan Staff Records: 0
+[2026-08-07 06:45:58]   - Semesters 1-4 Marks Records: 2400
+[2026-08-07 06:45:58]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-07 06:45:58]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-07 06:45:58] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-07 06:45:58]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-07 06:45:58]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-07 06:45:58]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-07 06:45:58]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-07 06:46:11] ==================================================
+[2026-08-07 06:46:11] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-07 06:46:11] ==================================================
+[2026-08-07 06:46:11] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-07 06:46:23]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-07 06:46:23]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-07 06:46:23] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-07 06:46:23]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-07 06:46:23] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-07 06:46:23]   - Student Count: 120 (Target: 120)
+[2026-08-07 06:46:23]   - Orphan Student Records: 0
+[2026-08-07 06:46:23]   - Orphan Staff Records: 0
+[2026-08-07 06:46:23]   - Semesters 1-4 Marks Records: 2400
+[2026-08-07 06:46:23]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-07 06:46:23]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-07 06:46:23] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-07 06:46:23]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-07 06:46:23]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-07 06:46:23]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-07 06:46:23]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-07 06:46:23]   GATE 4 20 IQAC CATEGORIES & ZERO PLACEHOLDER CHECK: PASS
+[2026-08-07 06:46:23] 
+[Gate 5] Measuring Subsystem SLA Performance Benchmarks...
+[2026-08-07 06:46:24]   - Login Route: 0.165s (Target: <1s) -> PASS
+[2026-08-07 06:46:24]   - Student Dashboard: 0.122s (Target: <2s) -> PASS
+[2026-08-07 06:46:24]   - Staff Dashboard: 0.121s (Target: <2s) -> PASS
+[2026-08-07 06:46:24]   - HOD Dashboard: 0.15s (Target: <2s) -> PASS
+[2026-08-07 06:46:24]   - NBA Report: 0.153s (Target: <5s) -> PASS
+[2026-08-07 06:46:24]   - Success Rate: 0.165s (Target: <5s) -> PASS
+[2026-08-07 06:46:25]   - Academic Performance: 0.167s (Target: <5s) -> PASS
+[2026-08-07 06:46:25]   GATE 5 PERFORMANCE BENCHMARKING: PASS
+[2026-08-07 06:46:25] 
+[Gate 6] Real-Time Live Workflow Simulation...
+[2026-08-07 06:46:43] ==================================================
+[2026-08-07 06:46:43] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-07 06:46:43] ==================================================
+[2026-08-07 06:46:43] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-07 06:46:57]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-07 06:46:57]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-07 06:46:57] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-07 06:46:57]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-07 06:46:57] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-07 06:46:57]   - Student Count: 120 (Target: 120)
+[2026-08-07 06:46:57]   - Orphan Student Records: 0
+[2026-08-07 06:46:57]   - Orphan Staff Records: 0
+[2026-08-07 06:46:57]   - Semesters 1-4 Marks Records: 2400
+[2026-08-07 06:46:57]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-07 06:46:57]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-07 06:46:57] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-07 06:46:57]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-07 06:46:57]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-07 06:46:57]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-07 06:46:57]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-07 06:46:57]   GATE 4 20 IQAC CATEGORIES & ZERO PLACEHOLDER CHECK: PASS
+[2026-08-07 06:46:57] 
+[Gate 5] Measuring Subsystem SLA Performance Benchmarks...
+[2026-08-07 06:46:57]   - Login Route: 0.157s (Target: <1s) -> PASS
+[2026-08-07 06:46:57]   - Student Dashboard: 0.168s (Target: <2s) -> PASS
+[2026-08-07 06:46:57]   - Staff Dashboard: 0.165s (Target: <2s) -> PASS
+[2026-08-07 06:46:58]   - HOD Dashboard: 0.169s (Target: <2s) -> PASS
+[2026-08-07 06:46:58]   - NBA Report: 0.18s (Target: <5s) -> PASS
+[2026-08-07 06:46:58]   - Success Rate: 0.18s (Target: <5s) -> PASS
+[2026-08-07 06:46:58]   - Academic Performance: 0.167s (Target: <5s) -> PASS
+[2026-08-07 06:46:58]   GATE 5 PERFORMANCE BENCHMARKING: PASS
+[2026-08-07 06:46:58] 
+[Gate 6] Real-Time Live Workflow Simulation...
+[2026-08-07 06:46:58]   - Marks Workflow Test: Mark 95.5 (O Grade) successfully stored and propagated to live queries.
+[2026-08-07 06:46:58]   - Simulation mark cleaned; Semester 5 restored for active teacher entry.
+[2026-08-07 06:46:58]   GATE 6 REAL-TIME WORKFLOW SIMULATION: PASS
+[2026-08-07 06:46:58] 
+==================================================
+[2026-08-07 06:46:58] === ALL VERIFICATION GATES PASSED SUCCESSFULLY ===
+[2026-08-07 06:46:58] ==================================================
+[2026-08-07 07:01:41] ==================================================
+[2026-08-07 07:01:41] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-07 07:01:41] ==================================================
+[2026-08-07 07:01:41] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-07 07:01:54]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-07 07:01:54]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-07 07:01:54] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-07 07:01:54]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-07 07:01:54] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-07 07:01:54]   - Student Count: 120 (Target: 120)
+[2026-08-07 07:01:54]   - Orphan Student Records: 0
+[2026-08-07 07:01:54]   - Orphan Staff Records: 0
+[2026-08-07 07:01:54]   - Semesters 1-4 Marks Records: 2400
+[2026-08-07 07:01:54]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-07 07:01:54]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-07 07:01:54] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-07 07:01:54]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-07 07:01:54]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-07 07:01:54]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-07 07:01:54]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-07 07:01:54]   GATE 4 20 IQAC CATEGORIES & ZERO PLACEHOLDER CHECK: PASS
+[2026-08-07 07:01:54] 
+[Gate 5] Measuring Subsystem SLA Performance Benchmarks...
+[2026-08-07 07:01:54]   - Login Route: 0.155s (Target: <1s) -> PASS
+[2026-08-07 07:01:54]   - Student Dashboard: 0.165s (Target: <2s) -> PASS
+[2026-08-07 07:01:54]   - Staff Dashboard: 0.167s (Target: <2s) -> PASS
+[2026-08-07 07:01:54]   - HOD Dashboard: 0.151s (Target: <2s) -> PASS
+[2026-08-07 07:01:54]   - NBA Report: 0.166s (Target: <5s) -> PASS
+[2026-08-07 07:01:55]   - Success Rate: 0.182s (Target: <5s) -> PASS
+[2026-08-07 07:01:55]   - Academic Performance: 0.15s (Target: <5s) -> PASS
+[2026-08-07 07:01:55]   GATE 5 PERFORMANCE BENCHMARKING: PASS
+[2026-08-07 07:01:55] 
+[Gate 6] Real-Time Live Workflow Simulation...
+[2026-08-07 07:01:55]   - Marks Workflow Test: Mark 95.5 (O Grade) successfully stored and propagated to live queries.
+[2026-08-07 07:01:55]   - Simulation mark cleaned; Semester 5 restored for active teacher entry.
+[2026-08-07 07:01:55]   GATE 6 REAL-TIME WORKFLOW SIMULATION: PASS
+[2026-08-07 07:01:55] 
+==================================================
+[2026-08-07 07:01:55] === ALL VERIFICATION GATES PASSED SUCCESSFULLY ===
+[2026-08-07 07:01:55] ==================================================
+[2026-08-25 09:10:03] ==================================================
+[2026-08-25 09:10:03] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-25 09:10:03] ==================================================
+[2026-08-25 09:10:03] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-25 09:10:14]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-25 09:10:14]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-25 09:10:14] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-25 09:10:14]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-25 09:10:14] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-25 09:10:14]   - Student Count: 120 (Target: 120)
+[2026-08-25 09:10:14]   - Orphan Student Records: 0
+[2026-08-25 09:10:14]   - Orphan Staff Records: 0
+[2026-08-25 09:10:14]   - Semesters 1-4 Marks Records: 2400
+[2026-08-25 09:10:14]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-25 09:10:14]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-25 09:10:14] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-25 09:10:14]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-25 09:10:14]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-25 09:10:14]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-25 09:10:14]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-25 09:10:14]   GATE 4 20 IQAC CATEGORIES & ZERO PLACEHOLDER CHECK: PASS
+[2026-08-25 09:10:14] 
+[Gate 5] Measuring Subsystem SLA Performance Benchmarks...
+[2026-08-25 09:10:14]   - Login Route: 0.224s (Target: <1s) -> PASS
+[2026-08-25 09:10:15]   - Student Dashboard: 0.197s (Target: <2s) -> PASS
+[2026-08-25 09:10:15]   - Staff Dashboard: 0.169s (Target: <2s) -> PASS
+[2026-08-25 09:10:15]   - HOD Dashboard: 0.19s (Target: <2s) -> PASS
+[2026-08-25 09:10:15]   - NBA Report: 0.184s (Target: <5s) -> PASS
+[2026-08-25 09:10:15]   - Success Rate: 0.155s (Target: <5s) -> PASS
+[2026-08-25 09:10:15]   - Academic Performance: 0.213s (Target: <5s) -> PASS
+[2026-08-25 09:10:15]   GATE 5 PERFORMANCE BENCHMARKING: PASS
+[2026-08-25 09:10:15] 
+[Gate 6] Real-Time Live Workflow Simulation...
+[2026-08-25 09:10:15]   - Marks Workflow Test: Mark 95.5 (O Grade) successfully stored and propagated to live queries.
+[2026-08-25 09:10:15]   - Simulation mark cleaned; Semester 5 restored for active teacher entry.
+[2026-08-25 09:10:15]   GATE 6 REAL-TIME WORKFLOW SIMULATION: PASS
+[2026-08-25 09:10:15] 
+==================================================
+[2026-08-25 09:10:15] === ALL VERIFICATION GATES PASSED SUCCESSFULLY ===
+[2026-08-25 09:10:15] ==================================================
+[2026-08-25 09:22:21] ==================================================
+[2026-08-25 09:22:21] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-25 09:22:21] ==================================================
+[2026-08-25 09:22:21] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-25 09:22:30]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-25 09:22:30]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-25 09:22:30] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-25 09:22:30]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-25 09:22:30] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-25 09:22:30]   - Student Count: 120 (Target: 120)
+[2026-08-25 09:22:30]   - Orphan Student Records: 0
+[2026-08-25 09:22:30]   - Orphan Staff Records: 0
+[2026-08-25 09:22:30]   - Semesters 1-4 Marks Records: 2400
+[2026-08-25 09:22:30]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-25 09:22:30]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-25 09:22:30] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-25 09:22:30]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-25 09:22:30]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-25 09:22:30]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-25 09:22:30]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-25 09:22:30]   GATE 4 20 IQAC CATEGORIES & ZERO PLACEHOLDER CHECK: PASS
+[2026-08-25 09:22:30] 
+[Gate 5] Measuring Subsystem SLA Performance Benchmarks...
+[2026-08-25 09:22:30]   - Login Route: 0.088s (Target: <1s) -> PASS
+[2026-08-25 09:22:30]   - Student Dashboard: 0.094s (Target: <2s) -> PASS
+[2026-08-25 09:22:30]   - Staff Dashboard: 0.095s (Target: <2s) -> PASS
+[2026-08-25 09:22:30]   - HOD Dashboard: 0.095s (Target: <2s) -> PASS
+[2026-08-25 09:22:31]   - NBA Report: 0.094s (Target: <5s) -> PASS
+[2026-08-25 09:22:31]   - Success Rate: 0.095s (Target: <5s) -> PASS
+[2026-08-25 09:22:31]   - Academic Performance: 0.095s (Target: <5s) -> PASS
+[2026-08-25 09:22:31]   GATE 5 PERFORMANCE BENCHMARKING: PASS
+[2026-08-25 09:22:31] 
+[Gate 6] Real-Time Live Workflow Simulation...
+[2026-08-25 09:22:31]   - Marks Workflow Test: Mark 95.5 (O Grade) successfully stored and propagated to live queries.
+[2026-08-25 09:22:31]   - Simulation mark cleaned; Semester 5 restored for active teacher entry.
+[2026-08-25 09:22:31]   GATE 6 REAL-TIME WORKFLOW SIMULATION: PASS
+[2026-08-25 09:22:31] 
+==================================================
+[2026-08-25 09:22:31] === ALL VERIFICATION GATES PASSED SUCCESSFULLY ===
+[2026-08-25 09:22:31] ==================================================
+[2026-08-25 09:31:28] ==================================================
+[2026-08-25 09:31:28] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-25 09:31:28] ==================================================
+[2026-08-25 09:31:28] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-25 09:31:39]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-25 09:31:39]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-25 09:31:39] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-25 09:31:39]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-25 09:31:39] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-25 09:31:39]   - Student Count: 120 (Target: 120)
+[2026-08-25 09:31:39]   - Orphan Student Records: 0
+[2026-08-25 09:31:39]   - Orphan Staff Records: 0
+[2026-08-25 09:31:39]   - Semesters 1-4 Marks Records: 2400
+[2026-08-25 09:31:39]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-25 09:31:39]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-25 09:31:39] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-25 09:31:39]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-25 09:31:39]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-25 09:31:39]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-25 09:31:39]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-25 09:31:39]   GATE 4 20 IQAC CATEGORIES & ZERO PLACEHOLDER CHECK: PASS
+[2026-08-25 09:31:39] 
+[Gate 5] Measuring Subsystem SLA Performance Benchmarks...
+[2026-08-25 09:31:39]   - Login Route: 0.212s (Target: <1s) -> PASS
+[2026-08-25 09:31:39]   - Student Dashboard: 0.149s (Target: <2s) -> PASS
+[2026-08-25 09:31:39]   - Staff Dashboard: 0.157s (Target: <2s) -> PASS
+[2026-08-25 09:31:39]   - HOD Dashboard: 0.127s (Target: <2s) -> PASS
+[2026-08-25 09:31:39]   - NBA Report: 0.125s (Target: <5s) -> PASS
+[2026-08-25 09:31:40]   - Success Rate: 0.179s (Target: <5s) -> PASS
+[2026-08-25 09:31:40]   - Academic Performance: 0.176s (Target: <5s) -> PASS
+[2026-08-25 09:31:40]   GATE 5 PERFORMANCE BENCHMARKING: PASS
+[2026-08-25 09:31:40] 
+[Gate 6] Real-Time Live Workflow Simulation...
+[2026-08-25 09:31:40]   - Marks Workflow Test: Mark 95.5 (O Grade) successfully stored and propagated to live queries.
+[2026-08-25 09:31:40]   - Simulation mark cleaned; Semester 5 restored for active teacher entry.
+[2026-08-25 09:31:40]   GATE 6 REAL-TIME WORKFLOW SIMULATION: PASS
+[2026-08-25 09:31:40] 
+==================================================
+[2026-08-25 09:31:40] === ALL VERIFICATION GATES PASSED SUCCESSFULLY ===
+[2026-08-25 09:31:40] ==================================================
+[2026-08-25 09:33:12] ==================================================
+[2026-08-25 09:33:12] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-25 09:33:12] ==================================================
+[2026-08-25 09:33:12] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-25 09:33:22]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-25 09:33:22]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-25 09:33:22] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-25 09:33:22]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-25 09:33:22] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-25 09:33:22]   - Student Count: 120 (Target: 120)
+[2026-08-25 09:33:22]   - Orphan Student Records: 0
+[2026-08-25 09:33:22]   - Orphan Staff Records: 0
+[2026-08-25 09:33:22]   - Semesters 1-4 Marks Records: 2400
+[2026-08-25 09:33:22]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-25 09:33:22]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-25 09:33:22] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-25 09:33:22]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-25 09:33:22]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-25 09:33:22]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-25 09:33:22]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-25 09:33:22]   GATE 4 20 IQAC CATEGORIES & ZERO PLACEHOLDER CHECK: PASS
+[2026-08-25 09:33:22] 
+[Gate 5] Measuring Subsystem SLA Performance Benchmarks...
+[2026-08-25 09:33:22]   - Login Route: 0.084s (Target: <1s) -> PASS
+[2026-08-25 09:33:22]   - Student Dashboard: 0.079s (Target: <2s) -> PASS
+[2026-08-25 09:33:23]   - Staff Dashboard: 0.079s (Target: <2s) -> PASS
+[2026-08-25 09:33:23]   - HOD Dashboard: 0.079s (Target: <2s) -> PASS
+[2026-08-25 09:33:23]   - NBA Report: 0.081s (Target: <5s) -> PASS
+[2026-08-25 09:33:23]   - Success Rate: 0.153s (Target: <5s) -> PASS
+[2026-08-25 09:33:23]   - Academic Performance: 0.161s (Target: <5s) -> PASS
+[2026-08-25 09:33:23]   GATE 5 PERFORMANCE BENCHMARKING: PASS
+[2026-08-25 09:33:23] 
+[Gate 6] Real-Time Live Workflow Simulation...
+[2026-08-25 09:33:23]   - Marks Workflow Test: Mark 95.5 (O Grade) successfully stored and propagated to live queries.
+[2026-08-25 09:33:23]   - Simulation mark cleaned; Semester 5 restored for active teacher entry.
+[2026-08-25 09:33:23]   GATE 6 REAL-TIME WORKFLOW SIMULATION: PASS
+[2026-08-25 09:33:23] 
+==================================================
+[2026-08-25 09:33:23] === ALL VERIFICATION GATES PASSED SUCCESSFULLY ===
+[2026-08-25 09:33:23] ==================================================
+[2026-08-25 09:58:57] ==================================================
+[2026-08-25 09:58:57] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-25 09:58:57] ==================================================
+[2026-08-25 09:58:57] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-25 09:59:11]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-25 09:59:11]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-25 09:59:11] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-25 09:59:11]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-25 09:59:11] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-25 09:59:11]   - Student Count: 120 (Target: 120)
+[2026-08-25 09:59:11]   - Orphan Student Records: 0
+[2026-08-25 09:59:11]   - Orphan Staff Records: 0
+[2026-08-25 09:59:11]   - Semesters 1-4 Marks Records: 2400
+[2026-08-25 09:59:11]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-25 09:59:11]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-25 09:59:11] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-25 09:59:11]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-25 09:59:11]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-25 09:59:11]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-25 09:59:11]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-25 09:59:11]   GATE 4 20 IQAC CATEGORIES & ZERO PLACEHOLDER CHECK: PASS
+[2026-08-25 09:59:11] 
+[Gate 5] Measuring Subsystem SLA Performance Benchmarks...
+[2026-08-25 09:59:11]   - Login Route: 0.148s (Target: <1s) -> PASS
+[2026-08-25 09:59:11]   - Student Dashboard: 0.151s (Target: <2s) -> PASS
+[2026-08-25 09:59:12]   - Staff Dashboard: 0.151s (Target: <2s) -> PASS
+[2026-08-25 09:59:12]   - HOD Dashboard: 0.167s (Target: <2s) -> PASS
+[2026-08-25 09:59:12]   - NBA Report: 0.166s (Target: <5s) -> PASS
+[2026-08-25 09:59:12]   - Success Rate: 0.152s (Target: <5s) -> PASS
+[2026-08-25 09:59:12]   - Academic Performance: 0.151s (Target: <5s) -> PASS
+[2026-08-25 09:59:12]   GATE 5 PERFORMANCE BENCHMARKING: PASS
+[2026-08-25 09:59:12] 
+[Gate 6] Real-Time Live Workflow Simulation...
+[2026-08-25 09:59:12]   - Marks Workflow Test: Mark 95.5 (O Grade) successfully stored and propagated to live queries.
+[2026-08-25 09:59:12]   - Simulation mark cleaned; Semester 5 restored for active teacher entry.
+[2026-08-25 09:59:12]   GATE 6 REAL-TIME WORKFLOW SIMULATION: PASS
+[2026-08-25 09:59:12] 
+==================================================
+[2026-08-25 09:59:12] === ALL VERIFICATION GATES PASSED SUCCESSFULLY ===
+[2026-08-25 09:59:12] ==================================================
+[2026-08-25 10:03:19] ==================================================
+[2026-08-25 10:03:19] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-25 10:03:19] ==================================================
+[2026-08-25 10:03:19] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-25 10:03:28]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-25 10:03:28]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-25 10:03:28] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-25 10:03:28]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-25 10:03:28] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-25 10:03:28]   - Student Count: 120 (Target: 120)
+[2026-08-25 10:03:28]   - Orphan Student Records: 0
+[2026-08-25 10:03:28]   - Orphan Staff Records: 0
+[2026-08-25 10:03:28]   - Semesters 1-4 Marks Records: 2400
+[2026-08-25 10:03:28]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-25 10:03:28]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-25 10:03:28] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-25 10:03:28]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-25 10:03:28]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-25 10:03:28]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-25 10:03:28]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-25 10:03:28]   GATE 4 20 IQAC CATEGORIES & ZERO PLACEHOLDER CHECK: PASS
+[2026-08-25 10:03:28] 
+[Gate 5] Measuring Subsystem SLA Performance Benchmarks...
+[2026-08-25 10:03:29]   - Login Route: 0.101s (Target: <1s) -> PASS
+[2026-08-25 10:03:29]   - Student Dashboard: 0.107s (Target: <2s) -> PASS
+[2026-08-25 10:03:29]   - Staff Dashboard: 0.107s (Target: <2s) -> PASS
+[2026-08-25 10:03:29]   - HOD Dashboard: 0.106s (Target: <2s) -> PASS
+[2026-08-25 10:03:29]   - NBA Report: 0.107s (Target: <5s) -> PASS
+[2026-08-25 10:03:29]   - Success Rate: 0.106s (Target: <5s) -> PASS
+[2026-08-25 10:03:29]   - Academic Performance: 0.106s (Target: <5s) -> PASS
+[2026-08-25 10:03:29]   GATE 5 PERFORMANCE BENCHMARKING: PASS
+[2026-08-25 10:03:29] 
+[Gate 6] Real-Time Live Workflow Simulation...
+[2026-08-25 10:03:29]   - Marks Workflow Test: Mark 95.5 (O Grade) successfully stored and propagated to live queries.
+[2026-08-25 10:03:29]   - Simulation mark cleaned; Semester 5 restored for active teacher entry.
+[2026-08-25 10:03:29]   GATE 6 REAL-TIME WORKFLOW SIMULATION: PASS
+[2026-08-25 10:03:29] 
+==================================================
+[2026-08-25 10:03:29] === ALL VERIFICATION GATES PASSED SUCCESSFULLY ===
+[2026-08-25 10:03:29] ==================================================
+[2026-08-25 10:03:52] ==================================================
+[2026-08-25 10:03:52] PSG PTC ERP — VERIFICATION GATES & SLA BENCHMARKS
+[2026-08-25 10:03:52] ==================================================
+[2026-08-25 10:03:52] 
+[Gate 1] Dynamic User Authentication Verification...
+[2026-08-25 10:04:01]   Result: Tested 137 active accounts. Passed: 137 / 137.
+[2026-08-25 10:04:01]   GATE 1 DYNAMIC AUTHENTICATION: PASS
+[2026-08-25 10:04:01] 
+[Gate 2] Legacy Demo Data Purge Check...
+[2026-08-25 10:04:01]   GATE 2 LEGACY PURGE CHECK: PASS (0 legacy records found)
+[2026-08-25 10:04:01] 
+[Gate 3] Database Integrity & Foreign Key Referential Check...
+[2026-08-25 10:04:01]   - Student Count: 120 (Target: 120)
+[2026-08-25 10:04:01]   - Orphan Student Records: 0
+[2026-08-25 10:04:01]   - Orphan Staff Records: 0
+[2026-08-25 10:04:01]   - Semesters 1-4 Marks Records: 2400
+[2026-08-25 10:04:01]   - Semester 5 Marks Records: 0 (Target: 0, open for entry)
+[2026-08-25 10:04:01]   GATE 3 DATABASE INTEGRITY: PASS
+[2026-08-25 10:04:01] 
+[Gate 4] 20 IQAC Category Population & Zero Placeholder Check...
+[2026-08-25 10:04:01]   - Category 'Student Profiles' (student_details): 120 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Staff Profiles' (staff_details): 14 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Subjects Master' (subjects): 50 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Academic Marks' (student_marks): 2400 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Student Attendance' (student_attendance): 3000 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Student Projects' (student_projects): 120 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Student Patents' (student_patents): 12 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Student Internships' (student_internships): 60 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Student Achievements' (student_achievements): 120 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Student Sports' (student_sports): 30 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Placement Statistics' (placement_statistics): 4 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Curriculum Gaps' (curriculum_gap): 4 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Industry Interactions' (industry_interactions): 3 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Guest Lectures' (guest_lectures): 2 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Alumni Interactions' (alumni_interactions): 2 records (PASS)
+[2026-08-25 10:04:01]   - Category 'FDP Records' (faculty_development_programs): 4 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Research Publications' (research_publications): 3 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Student Publications' (student_publications): 3 records (PASS)
+[2026-08-25 10:04:01]   - Category 'MoU Agreements' (mou_master): 3 records (PASS)
+[2026-08-25 10:04:01]   - Category 'Feedback Analysis' (feedback_analysis): 4 records (PASS)
+[2026-08-25 10:04:01]   GATE 4 20 IQAC CATEGORIES & ZERO PLACEHOLDER CHECK: PASS
+[2026-08-25 10:04:01] 
+[Gate 5] Measuring Subsystem SLA Performance Benchmarks...
+[2026-08-25 10:04:02]   - Login Route: 0.113s (Target: <1s) -> PASS
+[2026-08-25 10:04:02]   - Student Dashboard: 0.107s (Target: <2s) -> PASS
+[2026-08-25 10:04:02]   - Staff Dashboard: 0.107s (Target: <2s) -> PASS
+[2026-08-25 10:04:02]   - HOD Dashboard: 0.12s (Target: <2s) -> PASS
+[2026-08-25 10:04:02]   - NBA Report: 0.122s (Target: <5s) -> PASS
+[2026-08-25 10:04:02]   - Success Rate: 0.106s (Target: <5s) -> PASS
+[2026-08-25 10:04:02]   - Academic Performance: 0.107s (Target: <5s) -> PASS
+[2026-08-25 10:04:02]   GATE 5 PERFORMANCE BENCHMARKING: PASS
+[2026-08-25 10:04:02] 
+[Gate 6] Real-Time Live Workflow Simulation...
+[2026-08-25 10:04:02]   - Marks Workflow Test: Mark 95.5 (O Grade) successfully stored and propagated to live queries.
+[2026-08-25 10:04:02]   - Simulation mark cleaned; Semester 5 restored for active teacher entry.
+[2026-08-25 10:04:02]   GATE 6 REAL-TIME WORKFLOW SIMULATION: PASS
+[2026-08-25 10:04:02] 
+==================================================
+[2026-08-25 10:04:02] === ALL VERIFICATION GATES PASSED SUCCESSFULLY ===
+[2026-08-25 10:04:02] ==================================================

@@ -1,0 +1,21 @@
+{
+    "seed_version": "v1.0.0",
+    "dataset": "PSG PTC Official Production Academic Dataset",
+    "academic_year": "2026-2027",
+    "generated_at": "2026-08-25T10:03:12+02:00",
+    "departments": [
+        "DI",
+        "AI"
+    ],
+    "students": 120,
+    "staff": 17,
+    "subjects": 50,
+    "historical_semesters": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "active_semester": 5,
+    "sha256": "09ad0e24b0166e8c4efff6593ebc7e72de7c695e06a3746620ec5f6de9a593b7"
+}

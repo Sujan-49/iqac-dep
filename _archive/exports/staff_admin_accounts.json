@@ -1,0 +1,81 @@
+﻿{
+    "staff": [
+        {
+            "staff_id": "6",
+            "full_name": "Prof. DI Tutor",
+            "department": "Diploma Information Technology",
+            "is_tutor": "1",
+            "username": "staff_it_1",
+            "role": "staff",
+            "is_active": "1"
+        },
+        {
+            "staff_id": "7",
+            "full_name": "Dr. DI Faculty",
+            "department": "Diploma Information Technology",
+            "is_tutor": "0",
+            "username": "staff_it_2",
+            "role": "staff",
+            "is_active": "1"
+        },
+        {
+            "staff_id": "8",
+            "full_name": "Ms. DI Lecturer",
+            "department": "Diploma Information Technology",
+            "is_tutor": "0",
+            "username": "staff_it_3",
+            "role": "staff",
+            "is_active": "1"
+        }
+    ],
+    "subjects": [
+        {
+            "subject_code": "24DI401",
+            "subject_name": "Programming in Java",
+            "staff_id": "6",
+            "staff_name": "Prof. DI Tutor",
+            "staff_username": "staff_it_1"
+        },
+        {
+            "subject_code": "24DI402",
+            "subject_name": "Database Management System",
+            "staff_id": "7",
+            "staff_name": "Dr. DI Faculty",
+            "staff_username": "staff_it_2"
+        },
+        {
+            "subject_code": "24DI403",
+            "subject_name": "Computer Networks",
+            "staff_id": "8",
+            "staff_name": "Ms. DI Lecturer",
+            "staff_username": "staff_it_3"
+        },
+        {
+            "subject_code": "24DI404",
+            "subject_name": "Web Technology",
+            "staff_id": "6",
+            "staff_name": "Prof. DI Tutor",
+            "staff_username": "staff_it_1"
+        },
+        {
+            "subject_code": "24DI405",
+            "subject_name": "Operating Systems",
+            "staff_id": "7",
+            "staff_name": "Dr. DI Faculty",
+            "staff_username": "staff_it_2"
+        },
+        {
+            "subject_code": "24DI406",
+            "subject_name": "Mini Project",
+            "staff_id": "8",
+            "staff_name": "Ms. DI Lecturer",
+            "staff_username": "staff_it_3"
+        }
+    ],
+    "admin": {
+        "id": "1",
+        "username": "admin",
+        "role": "admin",
+        "is_active": "1"
+    }
+}

@@ -1,0 +1,5 @@
+[2026-08-07 06:32:46] Starting database backup process...
+[2026-08-07 06:32:46] Target database: iqac
+[2026-08-07 06:32:46] Backup output path: C:\xampp\htdocs\Iqac/database/backup_iqac_20260807_063246.sql
+[2026-08-07 06:32:46] Found 48 tables in database 'iqac'
+[2026-08-07 06:32:46] Backup file written successfully. Size: 2,985,525 bytes.

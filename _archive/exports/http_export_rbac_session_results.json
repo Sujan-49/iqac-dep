@@ -1,0 +1,71 @@
+{
+    "Logins":  {
+                   "staff_it_1":  302,
+                   "student_24DI01":  302,
+                   "admin":  302,
+                   "superadmin":  302
+               },
+    "Exports":  [
+                    {
+                        "Format":  "pdf",
+                        "Status":  200,
+                        "Bytes":  201849,
+                        "ContentType":  "application/pdf"
+                    },
+                    {
+                        "Format":  "excel",
+                        "Status":  200,
+                        "Bytes":  211306,
+                        "ContentType":  "application/vnd.ms-excel"
+                    },
+                    {
+                        "Format":  "docx",
+                        "Status":  200,
+                        "Bytes":  24833,
+                        "ContentType":  "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                    },
+                    {
+                        "Format":  "print",
+                        "Status":  200,
+                        "Bytes":  176752,
+                        "ContentType":  "text/html; charset=UTF-8"
+                    }
+                ],
+    "Access":  [
+                   {
+                       "Test":  "Student direct admin_controls",
+                       "Url":  "admin_controls.php",
+                       "Status":  302,
+                       "Location":  "dashboard_student.php",
+                       "Result":  "Allowed"
+                   },
+                   {
+                       "Test":  "Staff direct admin_controls",
+                       "Url":  "admin_controls.php",
+                       "Status":  302,
+                       "Location":  "dashboard_tutor.php",
+                       "Result":  "Allowed"
+                   },
+                   {
+                       "Test":  "Student direct marks_entry",
+                       "Url":  "marks_entry.php",
+                       "Status":  200,
+                       "Location":  null,
+                       "Result":  "Allowed"
+                   },
+                   {
+                       "Test":  "Staff direct student dashboard",
+                       "Url":  "dashboard_student.php",
+                       "Status":  302,
+                       "Location":  "dashboard_tutor.php",
+                       "Result":  "Allowed"
+                   },
+                   {
+                       "Test":  "Student after logout dashboard",
+                       "Url":  "dashboard_student.php",
+                       "Status":  302,
+                       "Location":  "login.php",
+                       "Result":  "Allowed"
+                   }
+               ]
+}

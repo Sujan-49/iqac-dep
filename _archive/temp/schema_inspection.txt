@@ -1,0 +1,246 @@
+### Table: users
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: username | Type: varchar(255) | Null: NO | Key: UNI | Default: 
+  - Field: password_hash | Type: varchar(255) | Null: NO | Key:  | Default: 
+  - Field: role | Type: varchar(30) | Null: NO | Key: MUL | Default: student
+  - Field: associated_id | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: is_active | Type: tinyint(1) | Null: NO | Key: MUL | Default: 1
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+  - Field: updated_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+  - Field: department | Type: varchar(100) | Null: YES | Key:  | Default: 
+  - Field: semester | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: section | Type: varchar(20) | Null: YES | Key:  | Default: 
+  - Field: batch | Type: varchar(30) | Null: YES | Key:  | Default: 
+  - Field: first_login | Type: tinyint(1) | Null: NO | Key:  | Default: 1
+  - Field: last_login | Type: datetime | Null: YES | Key:  | Default: 
+  - Field: force_password_change | Type: tinyint(1) | Null: NO | Key:  | Default: 0
+  - Field: password_changed_at | Type: datetime | Null: YES | Key:  | Default: 
+  - Field: failed_login_attempts | Type: int(11) | Null: NO | Key:  | Default: 0
+  - Field: locked_until | Type: datetime | Null: YES | Key:  | Default: 
+
+### Table: student_details
+  - Field: student_id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: user_id | Type: int(11) | Null: NO | Key: UNI | Default: 
+  - Field: full_name | Type: varchar(255) | Null: NO | Key:  | Default: 
+  - Field: gender | Type: varchar(20) | Null: YES | Key:  | Default: 
+  - Field: blood_group | Type: varchar(10) | Null: YES | Key:  | Default: 
+  - Field: department | Type: varchar(100) | Null: YES | Key:  | Default: 
+  - Field: roll_number | Type: varchar(50) | Null: NO | Key: UNI | Default: 
+  - Field: class_year | Type: varchar(50) | Null: YES | Key:  | Default: 
+  - Field: batch | Type: varchar(50) | Null: YES | Key:  | Default: 
+  - Field: section | Type: varchar(20) | Null: YES | Key:  | Default: 
+  - Field: is_lateral | Type: tinyint(1) | Null: NO | Key:  | Default: 0
+  - Field: previous_school_name | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: caste_category | Type: varchar(20) | Null: YES | Key:  | Default: 
+  - Field: marks_sslc | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: marks_hsc | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: address_full | Type: text | Null: YES | Key:  | Default: 
+  - Field: father_name | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: mother_name | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: parent_occupation | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: parent_phone | Type: varchar(20) | Null: YES | Key:  | Default: 
+  - Field: student_phone | Type: varchar(20) | Null: YES | Key:  | Default: 
+  - Field: email | Type: varchar(150) | Null: YES | Key:  | Default: 
+  - Field: annual_income | Type: decimal(12,2) | Null: YES | Key:  | Default: 
+  - Field: current_semester | Type: int(11) | Null: YES | Key:  | Default: 1
+  - Field: tutor_staff_id | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: stage1_status | Type: enum('pending','approved','rejected','active') | Null: YES | Key: MUL | Default: pending
+  - Field: stage2_clubs_activities | Type: text | Null: YES | Key:  | Default: 
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+  - Field: updated_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: staff_details
+  - Field: staff_id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: user_id | Type: int(11) | Null: NO | Key: UNI | Default: 
+  - Field: full_name | Type: varchar(255) | Null: NO | Key:  | Default: 
+  - Field: department | Type: varchar(255) | Null: YES | Key: MUL | Default: 
+  - Field: is_tutor | Type: tinyint(1) | Null: YES | Key:  | Default: 0
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+  - Field: updated_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: subjects
+  - Field: subject_code | Type: varchar(50) | Null: NO | Key: PRI | Default: 
+  - Field: subject_name | Type: varchar(255) | Null: NO | Key:  | Default: 
+  - Field: subject_type | Type: enum('theory','lab','communication') | Null: YES | Key: MUL | Default: theory
+  - Field: semester | Type: int(11) | Null: YES | Key: MUL | Default: 
+  - Field: year | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: department | Type: varchar(100) | Null: YES | Key:  | Default: General
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: staff_subject_allocation
+  - Field: allocation_id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: staff_id | Type: int(11) | Null: NO | Key: MUL | Default: 
+  - Field: subject_code | Type: varchar(50) | Null: NO | Key:  | Default: 
+  - Field: class_year | Type: varchar(50) | Null: NO | Key:  | Default: 
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: student_marks
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: student_id | Type: int(11) | Null: NO | Key: MUL | Default: 
+  - Field: subject_id | Type: int(11) | Null: NO | Key:  | Default: 
+  - Field: subject_code | Type: varchar(50) | Null: YES | Key: MUL | Default: 
+  - Field: semester | Type: int(11) | Null: NO | Key: MUL | Default: 
+  - Field: academic_year | Type: varchar(20) | Null: YES | Key:  | Default: 
+  - Field: class_year | Type: varchar(50) | Null: YES | Key:  | Default: 
+  - Field: batch | Type: varchar(50) | Null: YES | Key:  | Default: 
+  - Field: section | Type: varchar(50) | Null: YES | Key:  | Default: 
+  - Field: ca1 | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: ca2 | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: ca3 | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: best_two | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: ca_converted_30 | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: assignment_mark | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: theory_total | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: cycle1_execution | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: cycle1_test | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: cycle2_record | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: cycle2_test | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: practical_total | Type: decimal(5,2) | Null: YES | Key:  | Default: 0.00
+  - Field: semester_grade | Type: varchar(5) | Null: YES | Key:  | Default: 
+  - Field: grade_point | Type: decimal(4,2) | Null: YES | Key:  | Default: 0.00
+  - Field: is_arrear | Type: tinyint(1) | Null: NO | Key:  | Default: 0
+  - Field: status | Type: enum('draft','submitted','verified','returned','locked') | Null: NO | Key:  | Default: submitted
+  - Field: entered_by | Type: int(11) | Null: NO | Key:  | Default: 
+  - Field: submitted_at | Type: datetime | Null: YES | Key:  | Default: 
+  - Field: verified_by | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: verified_at | Type: datetime | Null: YES | Key:  | Default: 
+  - Field: staff_comment | Type: text | Null: YES | Key:  | Default: 
+  - Field: locked_by_user_id | Type: int(11) | Null: YES | Key: MUL | Default: 
+  - Field: locked_at | Type: datetime | Null: YES | Key:  | Default: 
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+  - Field: updated_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: notifications
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: user_id | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: role | Type: varchar(30) | Null: YES | Key:  | Default: 
+  - Field: title | Type: varchar(160) | Null: NO | Key:  | Default: 
+  - Field: message | Type: text | Null: NO | Key:  | Default: 
+  - Field: link_url | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: is_read | Type: tinyint(1) | Null: NO | Key:  | Default: 0
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: applications
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: student_id | Type: int(11) | Null: NO | Key:  | Default: 
+  - Field: application_type | Type: varchar(60) | Null: NO | Key:  | Default: 
+  - Field: title | Type: varchar(160) | Null: NO | Key:  | Default: 
+  - Field: description | Type: text | Null: YES | Key:  | Default: 
+  - Field: attachment_path | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: status | Type: enum('pending','under_review','approved','rejected','cancelled') | Null: NO | Key:  | Default: pending
+  - Field: current_level | Type: enum('tutor','staff','hod','admin','complete') | Null: NO | Key:  | Default: tutor
+  - Field: submitted_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+  - Field: updated_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: application_actions
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: application_id | Type: int(11) | Null: NO | Key:  | Default: 
+  - Field: actor_user_id | Type: int(11) | Null: NO | Key:  | Default: 
+  - Field: actor_role | Type: varchar(30) | Null: NO | Key:  | Default: 
+  - Field: action | Type: varchar(30) | Null: NO | Key:  | Default: 
+  - Field: remarks | Type: text | Null: YES | Key:  | Default: 
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: student_leaves
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: student_id | Type: int(11) | Null: NO | Key: MUL | Default: 
+  - Field: from_date | Type: date | Null: NO | Key:  | Default: 
+  - Field: to_date | Type: date | Null: NO | Key:  | Default: 
+  - Field: reason | Type: text | Null: YES | Key:  | Default: 
+  - Field: status | Type: enum('pending','approved','rejected') | Null: YES | Key: MUL | Default: pending
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: student_achievements
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: student_id | Type: int(11) | Null: NO | Key: MUL | Default: 
+  - Field: title | Type: varchar(255) | Null: NO | Key:  | Default: 
+  - Field: achievement_type | Type: varchar(100) | Null: YES | Key:  | Default: General
+  - Field: description | Type: text | Null: YES | Key:  | Default: 
+  - Field: achievement_date | Type: date | Null: YES | Key:  | Default: 
+  - Field: status | Type: enum('pending','approved','rejected') | Null: YES | Key:  | Default: pending
+  - Field: staff_remark | Type: varchar(500) | Null: YES | Key:  | Default: 
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: student_sports
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: student_id | Type: int(11) | Null: NO | Key: MUL | Default: 
+  - Field: sport_name | Type: varchar(255) | Null: NO | Key:  | Default: 
+  - Field: level | Type: varchar(100) | Null: YES | Key:  | Default: 
+  - Field: position | Type: varchar(100) | Null: YES | Key:  | Default: 
+  - Field: year_participated | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: certificate_path | Type: varchar(500) | Null: YES | Key:  | Default: 
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: student_publications
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: roll_no | Type: varchar(50) | Null: YES | Key:  | Default: 
+  - Field: student_name | Type: varchar(100) | Null: YES | Key:  | Default: 
+  - Field: paper_title | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: journal_conference | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: issn_isbn | Type: varchar(50) | Null: YES | Key:  | Default: 
+  - Field: date_of_publication | Type: date | Null: YES | Key:  | Default: 
+
+### Table: placement_statistics
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: academic_year | Type: varchar(20) | Null: YES | Key:  | Default: 
+  - Field: batch_year | Type: varchar(50) | Null: YES | Key:  | Default: 
+  - Field: total_eligible | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: placed_count | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: average_package | Type: decimal(10,2) | Null: YES | Key:  | Default: 
+  - Field: highest_package | Type: decimal(10,2) | Null: YES | Key:  | Default: 
+  - Field: lowest_package | Type: decimal(10,2) | Null: YES | Key:  | Default: 
+  - Field: recorded_date | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: student_higher_studies
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: student_id | Type: int(11) | Null: NO | Key:  | Default: 
+  - Field: college_name | Type: varchar(255) | Null: NO | Key:  | Default: 
+  - Field: course_name | Type: varchar(255) | Null: NO | Key:  | Default: 
+  - Field: admission_year | Type: year(4) | Null: NO | Key:  | Default: 
+
+### Table: gallery_images
+  - Field: image_id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: title | Type: varchar(255) | Null: NO | Key:  | Default: 
+  - Field: file_path | Type: varchar(500) | Null: NO | Key:  | Default: 
+  - Field: uploaded_by_staff_id | Type: int(11) | Null: YES | Key: MUL | Default: 
+  - Field: category | Type: enum('gallery','department') | Null: YES | Key: MUL | Default: gallery
+  - Field: upload_date | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: mou_master
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: mou_number | Type: varchar(100) | Null: YES | Key: UNI | Default: 
+  - Field: organization_name | Type: varchar(255) | Null: NO | Key:  | Default: 
+  - Field: organization_type | Type: varchar(100) | Null: YES | Key:  | Default: 
+  - Field: contact_person | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: contact_email | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: contact_phone | Type: varchar(20) | Null: YES | Key:  | Default: 
+  - Field: address | Type: text | Null: YES | Key:  | Default: 
+  - Field: city | Type: varchar(100) | Null: YES | Key:  | Default: 
+  - Field: state | Type: varchar(100) | Null: YES | Key:  | Default: 
+  - Field: country | Type: varchar(100) | Null: YES | Key:  | Default: 
+  - Field: website | Type: varchar(255) | Null: YES | Key:  | Default: 
+  - Field: created_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+  - Field: updated_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+
+### Table: erp_form_submissions
+  - Field: id | Type: int(11) | Null: NO | Key: PRI | Default: 
+  - Field: form_key | Type: varchar(80) | Null: NO | Key: MUL | Default: 
+  - Field: form_title | Type: varchar(180) | Null: NO | Key:  | Default: 
+  - Field: form_scope | Type: enum('student','staff','admin') | Null: NO | Key: MUL | Default: 
+  - Field: submitted_by_user_id | Type: int(11) | Null: NO | Key: MUL | Default: 
+  - Field: submitted_by_role | Type: varchar(30) | Null: NO | Key:  | Default: 
+  - Field: student_id | Type: int(11) | Null: YES | Key: MUL | Default: 
+  - Field: staff_id | Type: int(11) | Null: YES | Key: MUL | Default: 
+  - Field: department | Type: varchar(120) | Null: YES | Key: MUL | Default: 
+  - Field: batch | Type: varchar(80) | Null: YES | Key:  | Default: 
+  - Field: semester | Type: varchar(30) | Null: YES | Key:  | Default: 
+  - Field: status | Type: enum('submitted','pending','approved','rejected','returned') | Null: NO | Key:  | Default: submitted
+  - Field: payload | Type: longtext | Null: NO | Key:  | Default: 
+  - Field: attachment_path | Type: varchar(500) | Null: YES | Key:  | Default: 
+  - Field: reviewer_user_id | Type: int(11) | Null: YES | Key:  | Default: 
+  - Field: reviewer_role | Type: varchar(30) | Null: YES | Key:  | Default: 
+  - Field: reviewer_remark | Type: varchar(500) | Null: YES | Key:  | Default: 
+  - Field: reviewed_at | Type: datetime | Null: YES | Key:  | Default: 
+  - Field: created_at | Type: timestamp | Null: NO | Key: MUL | Default: current_timestamp()
+  - Field: updated_at | Type: timestamp | Null: NO | Key:  | Default: current_timestamp()
+

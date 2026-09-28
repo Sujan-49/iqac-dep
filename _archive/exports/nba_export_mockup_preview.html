@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBA Export Mockup Preview</title>
+<style>
+  :root {
+    --ink: #111;
+    --line: #111;
+    --paper: #fff;
+    --desk: #eef2f7;
+    --muted: #555;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 28px;
+    background: var(--desk);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .preview-note {
+    max-width: 1120px;
+    margin: 0 auto 18px;
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    font: 14px/1.5 Arial, sans-serif;
+  }
+  .sheet {
+    width: 1123px;
+    min-height: 794px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 36px 42px;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, .18);
+  }
+  .college-header {
+    text-align: center;
+    border: 2px solid var(--line);
+    padding: 12px 14px 10px;
+  }
+  .college-header h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: .4px;
+    font-weight: 800;
+  }
+  .college-header h2 {
+    margin: 6px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .college-header h3 {
+    margin: 7px 0 0;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  .meta {
+    width: 100%;
+    margin-top: 12px;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .meta td {
+    border: 1px solid var(--line);
+    padding: 7px 9px;
+  }
+  .meta td:nth-child(odd) {
+    width: 16%;
+    font-weight: 700;
+    background: #f8fafc;
+  }
+  .section-title {
+    margin: 18px 0 8px;
+    font-size: 14px;
+    font-weight: 800;
+  }
+  table.report {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .report th,
+  .report td {
+    border: 1px solid var(--line);
+    padding: 6px 7px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .report th {
+    font-weight: 800;
+    background: #f1f5f9;
+  }
+  .report td:nth-child(2),
+  .report th:nth-child(2) {
+    text-align: left;
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--line);
+    border-top: 0;
+  }
+  .summary-grid div {
+    padding: 8px;
+    border-right: 1px solid var(--line);
+    font-size: 11px;
+  }
+  .summary-grid div:last-child { border-right: 0; }
+  .summary-grid strong {
+    display: block;
+    font-size: 15px;
+    margin-top: 3px;
+  }
+  .signatures {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  .signature-box {
+    min-height: 70px;
+    border: 1px solid var(--line);
+    padding: 8px;
+    display: grid;
+    align-content: end;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .footer {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    font-size: 11px;
+  }
+  .footer div {
+    border-top: 1px solid var(--line);
+    padding-top: 6px;
+  }
+  .seal {
+    height: 54px;
+    border: 1px dashed #555;
+    display: grid;
+    place-items: center;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  @media print {
+    body { padding: 0; background: #fff; }
+    .preview-note { display: none; }
+    .sheet { box-shadow: none; width: auto; min-height: auto; }
+    @page { size: A4 landscape; margin: 12mm; }
+  }
+</style>
+</head>
+<body>
+<div class="preview-note">
+  <strong>Mockup only:</strong> This is a proposed NBA export layout preview. It is not wired to the live export route yet.
+</div>
+<main class="sheet">
+  <header class="college-header">
+    <h1>PSG POLYTECHNIC COLLEGE</h1>
+    <h2>Department of Diploma Information Technology</h2>
+    <h3>NBA ACCREDITATION REPORT - BATCH PERFORMANCE</h3>
+  </header>
+
+  <table class="meta">
+    <tr>
+      <td>Academic Year</td><td>2026-2027</td>
+      <td>Semester</td><td>4</td>
+      <td>Batch</td><td>24DI</td>
+    </tr>
+    <tr>
+      <td>Report Type</td><td>Batch Report</td>
+      <td>Generated Date</td><td>2026-06-02</td>
+      <td>Prepared By</td><td>admin</td>
+    </tr>
+    <tr>
+      <td>Verified By</td><td>Faculty In-charge</td>
+      <td>Approved By</td><td>HOD / Principal</td>
+      <td>Page No.</td><td>1</td>
+    </tr>
+  </table>
+
+  <h4 class="section-title">Table 1: Academic Performance Summary</h4>
+  <table class="report">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Subject / Faculty</th>
+        <th>Appeared</th>
+        <th>Passed</th>
+        <th>Failed / RA</th>
+        <th>Pass %</th>
+        <th>Fail %</th>
+        <th>Arrear %</th>
+        <th>Highest</th>
+        <th>Lowest</th>
+        <th>Average</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>24DI401 - Programming in Java<br>Prof. DI Tutor</td><td>60</td><td>55</td><td>5</td><td>91.67%</td><td>8.33%</td><td>8.33%</td><td>89</td><td>42</td><td>74.20</td></tr>
+      <tr><td>2</td><td>24DI402 - Database Management System<br>Dr. DI Faculty</td><td>60</td><td>55</td><td>5</td><td>91.67%</td><td>8.33%</td><td>8.33%</td><td>88</td><td>41</td><td>73.80</td></tr>
+      <tr><td>3</td><td>24DI403 - Computer Networks<br>Ms. DI Lecturer</td><td>60</td><td>55</td><td>5</td><td>91.67%</td><td>8.33%</td><td>8.33%</td><td>87</td><td>40</td><td>72.95</td></tr>
+      <tr><td>4</td><td>24DI404 - Web Technology<br>Prof. DI Tutor</td><td>60</td><td>55</td><td>5</td><td>91.67%</td><td>8.33%</td><td>8.33%</td><td>90</td><td>43</td><td>75.10</td></tr>
+      <tr><td>5</td><td>24DI405 - Operating Systems<br>Dr. DI Faculty</td><td>60</td><td>55</td><td>5</td><td>91.67%</td><td>8.33%</td><td>8.33%</td><td>86</td><td>39</td><td>72.40</td></tr>
+      <tr><td>6</td><td>24DI406 - Mini Project<br>Ms. DI Lecturer</td><td>60</td><td>55</td><td>5</td><td>91.67%</td><td>8.33%</td><td>8.33%</td><td>92</td><td>45</td><td>78.65</td></tr>
+    </tbody>
+  </table>
+  <div class="summary-grid">
+    <div>Total Appeared<strong>360</strong></div>
+    <div>Total Passed<strong>330</strong></div>
+    <div>Total RA / Failed<strong>30</strong></div>
+    <div>Overall Pass %<strong>91.67%</strong></div>
+  </div>
+
+  <h4 class="section-title">Table 2: NBA Documentation Statistics</h4>
+  <table class="report">
+    <thead>
+      <tr>
+        <th>S.No</th><th>Metric</th><th>Value</th><th>NBA Evidence Source</th><th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Success Index with Backlog</td><td>91.67%</td><td>Semester result records</td><td>Verified</td></tr>
+      <tr><td>2</td><td>Success Rate without Backlog</td><td>86.00%</td><td>Arrear analysis</td><td>Verified</td></tr>
+      <tr><td>3</td><td>Academic Performance Index</td><td>8.42</td><td>Subject-wise analysis</td><td>Calculated</td></tr>
+      <tr><td>4</td><td>Student Achievement Records</td><td>18</td><td>Achievement module</td><td>Attached</td></tr>
+    </tbody>
+  </table>
+
+  <section class="signatures">
+    <div class="signature-box">Prepared By<br>Faculty In-charge</div>
+    <div class="signature-box">Faculty Signature</div>
+    <div class="signature-box">Tutor Signature</div>
+    <div class="signature-box">HOD Signature</div>
+    <div class="signature-box">Principal Signature</div>
+  </section>
+
+  <section class="footer">
+    <div>Generated Date: 2026-06-02</div>
+    <div class="seal">Department Seal Area</div>
+    <div style="text-align:right">Page 1 of 1</div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Sticky report toolbar with glassmorphism effect */
+
+.report-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
+}
+
+/* Groupings */
+.toolbar-left, 
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Base button class */
+.rpt-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.rpt-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.1), 0 2px 4px -1px rgba(15, 23, 42, 0.06);
+}
+
+.rpt-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.1);
+}
+
+.rpt-btn:focus-visible {
+  outline: 2px solid var(--royal);
+  outline-offset: 2px;
+}
+
+/* Button Variants */
+.rpt-btn-primary {
+  background: var(--royal);
+  color: var(--surface);
+}
+
+.rpt-btn-secondary {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--line);
+}
+
+.rpt-btn-secondary:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+}
+
+.rpt-btn-success {
+  background: var(--success);
+  color: var(--surface);
+}
+
+.rpt-btn-info {
+  background: var(--blue);
+  color: var(--surface);
+}
+
+.rpt-btn-danger {
+  background: var(--danger);
+  color: var(--surface);
+}
+
+.rpt-btn-gold {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+/* Icon-only variant */
+.rpt-btn-icon {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 6px;
+}
+
+.rpt-btn i {
+  font-size: 14px;
+}
+
+/* Separator */
+.toolbar-sep {
+  width: 1px;
+  height: 24px;
+  background-color: var(--line);
+  margin: 0 4px;
+}

@@ -1,0 +1,271 @@
+{
+    "marker": "FINAL_LIVE_E2E_2026_06_05",
+    "students_tested": 30,
+    "department_distribution": [
+        [
+            "Diploma Information Technology",
+            10
+        ],
+        [
+            "Computer Engineering",
+            10
+        ],
+        [
+            "Electrical and Electronics Engineering",
+            5
+        ],
+        [
+            "Mechanical Engineering",
+            5
+        ]
+    ],
+    "marks_inserted": 180,
+    "status_counts": {
+        "submitted": 45,
+        "verified": 45,
+        "returned": 45,
+        "locked": 45
+    },
+    "grade_counts": {
+        "O": 26,
+        "A+": 26,
+        "A": 26,
+        "B+": 26,
+        "B": 26,
+        "C": 25,
+        "RA": 25
+    },
+    "pass_rows": 155,
+    "arrear_rows": 25,
+    "notifications_created": 6,
+    "audit_actions_created": 8,
+    "subject_access": [
+        {
+            "username": "staff_it_1",
+            "staff_id": 6,
+            "full_name": "Prof. DI Tutor",
+            "subjects": "24DI401, 24DI404"
+        },
+        {
+            "username": "staff_it_2",
+            "staff_id": 7,
+            "full_name": "Dr. DI Faculty",
+            "subjects": "24DI402, 24DI405"
+        },
+        {
+            "username": "staff_it_3",
+            "staff_id": 8,
+            "full_name": "Ms. DI Lecturer",
+            "subjects": "24DI403, 24DI406"
+        }
+    ],
+    "tutor_scope": [
+        {
+            "staff_id": 6,
+            "full_name": "Prof. DI Tutor",
+            "assigned_students": 60,
+            "batches": "24DI"
+        },
+        {
+            "staff_id": 9,
+            "full_name": "Prof. CS Tutor",
+            "assigned_students": 60,
+            "batches": "24CS"
+        },
+        {
+            "staff_id": 12,
+            "full_name": "Prof. EE Tutor",
+            "assigned_students": 60,
+            "batches": "24EE"
+        },
+        {
+            "staff_id": 15,
+            "full_name": "Prof. ME Tutor",
+            "assigned_students": 60,
+            "batches": "24ME"
+        }
+    ],
+    "calculation_rows": [],
+    "samples": [
+        {
+            "roll": "24DI01",
+            "subject": "24DI401",
+            "ca1": 19,
+            "ca2": 22,
+            "ca3": 25,
+            "practical": [
+                7,
+                7,
+                9,
+                9
+            ],
+            "grade": "O",
+            "status": "submitted"
+        },
+        {
+            "roll": "24DI01",
+            "subject": "24DI402",
+            "ca1": 22,
+            "ca2": 27,
+            "ca3": 32,
+            "practical": [
+                8,
+                8,
+                10,
+                4
+            ],
+            "grade": "A+",
+            "status": "verified"
+        },
+        {
+            "roll": "24DI01",
+            "subject": "24DI403",
+            "ca1": 25,
+            "ca2": 32,
+            "ca3": 39,
+            "practical": [
+                9,
+                9,
+                5,
+                5
+            ],
+            "grade": "A",
+            "status": "returned"
+        },
+        {
+            "roll": "24DI01",
+            "subject": "24DI404",
+            "ca1": 28,
+            "ca2": 37,
+            "ca3": 46,
+            "practical": [
+                10,
+                4,
+                6,
+                6
+            ],
+            "grade": "B+",
+            "status": "locked"
+        },
+        {
+            "roll": "24DI01",
+            "subject": "24DI405",
+            "ca1": 31,
+            "ca2": 42,
+            "ca3": 24,
+            "practical": [
+                5,
+                5,
+                7,
+                7
+            ],
+            "grade": "B",
+            "status": "submitted"
+        },
+        {
+            "roll": "24DI01",
+            "subject": "24DI406",
+            "ca1": 34,
+            "ca2": 17,
+            "ca3": 31,
+            "practical": [
+                6,
+                6,
+                8,
+                8
+            ],
+            "grade": "C",
+            "status": "verified"
+        },
+        {
+            "roll": "24DI02",
+            "subject": "24DI401",
+            "ca1": 37,
+            "ca2": 22,
+            "ca3": 38,
+            "practical": [
+                7,
+                7,
+                9,
+                9
+            ],
+            "grade": "RA",
+            "status": "returned"
+        },
+        {
+            "roll": "24DI02",
+            "subject": "24DI402",
+            "ca1": 40,
+            "ca2": 27,
+            "ca3": 45,
+            "practical": [
+                8,
+                8,
+                10,
+                4
+            ],
+            "grade": "O",
+            "status": "locked"
+        },
+        {
+            "roll": "24DI02",
+            "subject": "24DI403",
+            "ca1": 43,
+            "ca2": 32,
+            "ca3": 23,
+            "practical": [
+                9,
+                9,
+                5,
+                5
+            ],
+            "grade": "A+",
+            "status": "submitted"
+        },
+        {
+            "roll": "24DI02",
+            "subject": "24DI404",
+            "ca1": 46,
+            "ca2": 37,
+            "ca3": 30,
+            "practical": [
+                10,
+                4,
+                6,
+                6
+            ],
+            "grade": "A",
+            "status": "verified"
+        },
+        {
+            "roll": "24DI02",
+            "subject": "24DI405",
+            "ca1": 18,
+            "ca2": 42,
+            "ca3": 37,
+            "practical": [
+                5,
+                5,
+                7,
+                7
+            ],
+            "grade": "B+",
+            "status": "returned"
+        },
+        {
+            "roll": "24DI02",
+            "subject": "24DI406",
+            "ca1": 21,
+            "ca2": 17,
+            "ca3": 44,
+            "practical": [
+                6,
+                6,
+                8,
+                8
+            ],
+            "grade": "B",
+            "status": "locked"
+        }
+    ]
+}

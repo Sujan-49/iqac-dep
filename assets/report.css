@@ -1,0 +1,12 @@
+/* 
+ * PSG PTC ERP Report System 
+ * Master Stylesheet
+ */
+
+@import url('css/report/base.css');
+@import url('css/report/toolbar.css');
+@import url('css/report/filters.css');
+@import url('css/report/cards.css');
+@import url('css/report/tables.css');
+@import url('css/report/print.css');
+@import url('css/report/responsive.css');

@@ -1,0 +1,87 @@
+/* Collapsible Filter Panel */
+
+.report-filter-panel {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(15, 23, 42, 0.02);
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/* Hide State */
+.report-filter-panel[hidden] {
+  display: none;
+}
+
+/* Open/Close Animation State */
+.report-filter-panel.is-collapsed {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  margin-bottom: 0;
+  border-width: 0;
+}
+
+.report-filter-panel.is-open {
+  max-height: 1000px; /* arbitrary large value */
+  opacity: 1;
+}
+
+/* Filter Grid */
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.filter-grid label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.filter-grid input, 
+.filter-grid select {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  box-sizing: border-box;
+}
+
+/* Inputs Focus State */
+.filter-grid input:focus, 
+.filter-grid select:focus {
+  border-color: var(--royal);
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1); /* rgba of royal #1e3a8a */
+  outline: 0;
+}
+
+.filter-grid input::placeholder {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+/* Filter Actions */
+.filter-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}

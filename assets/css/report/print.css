@@ -1,0 +1,350 @@
+/* ==========================================================================
+   PSG PTC ERP — Official IQAC Print Stylesheet
+   Source of Truth: DIT_IQAC_2023_2024_Edit3-feb2025-update (3).docx
+   ========================================================================== */
+
+@media print {
+  @page {
+    size: letter;
+    margin: 1in;
+  }
+
+  /* Hide Web/ERP UI Elements */
+  .erp-sidebar,
+  .erp-topbar,
+  .report-toolbar,
+  .report-filter-panel,
+  .report-cards-grid,
+  .erp-breadcrumb,
+  .report-search-container,
+  .report-pagination,
+  .toolbar-actions,
+  .no-print,
+  .btn,
+  .btn-toolbar,
+  button,
+  input,
+  select {
+    display: none !important;
+  }
+
+  /* Reset Layout Container for Print */
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 1.15 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .erp-layout {
+    display: block !important;
+    grid-template-columns: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .erp-main {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .erp-content {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .report-shell {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    background: #ffffff !important;
+  }
+
+  /* Official Header Block */
+  .report-header {
+    text-align: center !important;
+    margin-bottom: 12pt !important;
+    border-bottom: 2pt solid #000000 !important;
+    padding-bottom: 8pt !important;
+    display: block !important;
+  }
+
+  .report-header-inner {
+    display: block !important;
+    text-align: center !important;
+  }
+
+  .report-header .psg-logo-circle,
+  .report-header .header-logo,
+  .report-header svg.psg-logo {
+    display: none !important; /* Document uses official text header */
+  }
+
+  .report-header h1,
+  .report-header .college-name,
+  .report-header-center h1 {
+    font-family: Calibri, sans-serif !important;
+    font-size: 14pt !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    text-decoration: underline !important;
+    color: #000000 !important;
+    margin: 0 0 2pt 0 !important;
+    text-align: center !important;
+  }
+
+  .report-header h2,
+  .report-header .department-name,
+  .report-header-center h3 {
+    font-family: Calibri, sans-serif !important;
+    font-size: 14pt !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: #000000 !important;
+    margin: 0 0 2pt 0 !important;
+    text-align: center !important;
+  }
+
+  .report-header h3,
+  .report-header .report-title,
+  .report-header-center h2 {
+    font-family: Calibri, sans-serif !important;
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: #000000 !important;
+    margin: 4pt 0 0 0 !important;
+    text-align: center !important;
+  }
+
+  .report-header .header-meta,
+  .report-header-right {
+    font-family: Calibri, sans-serif !important;
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    text-align: right !important;
+    color: #000000 !important;
+    margin-top: 4pt !important;
+  }
+
+  /* Official Metadata Bar / Table */
+  .report-meta-bar {
+    display: table !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    margin-bottom: 12pt !important;
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+
+  .report-meta-bar .meta-badge,
+  .report-meta-bar .meta-col {
+    display: table-cell !important;
+    border: 0.5pt solid #000000 !important;
+    padding: 3pt 5pt !important;
+    font-size: 10pt !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+  }
+
+  .report-meta-bar .badge-label,
+  .report-meta-bar strong {
+    font-weight: bold !important;
+    color: #000000 !important;
+  }
+
+  .report-meta-bar .badge-value {
+    color: #000000 !important;
+    font-weight: normal !important;
+  }
+
+  /* Section Titles & Table Headings */
+  .iqac-section-heading,
+  .section-letter {
+    font-family: Calibri, sans-serif !important;
+    font-size: 11pt !important;
+    font-weight: bold !important;
+    margin-top: 12pt !important;
+    margin-bottom: 4pt !important;
+    color: #000000 !important;
+    page-break-after: avoid !important;
+  }
+
+  .iqac-table-title,
+  .table-title {
+    font-family: Calibri, sans-serif !important;
+    font-size: 11pt !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    margin-top: 8pt !important;
+    margin-bottom: 4pt !important;
+    color: #000000 !important;
+    page-break-after: avoid !important;
+  }
+
+  /* Data Tables — Strict Template Formatting */
+  .report-table-container,
+  .table-container {
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    margin-bottom: 12pt !important;
+    background: transparent !important;
+  }
+
+  table.report-table,
+  table.iqac-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    font-family: Calibri, sans-serif !important;
+    font-size: 9pt !important;
+    margin-bottom: 10pt !important;
+    page-break-inside: auto !important;
+  }
+
+  table.report-table thead,
+  table.iqac-table thead {
+    display: table-header-group !important;
+  }
+
+  table.report-table tr,
+  table.iqac-table tr {
+    page-break-inside: avoid !important;
+  }
+
+  table.report-table th,
+  table.report-table td,
+  table.iqac-table th,
+  table.iqac-table td {
+    border: 0.5pt solid #000000 !important;
+    padding: 3pt 4pt !important;
+    font-size: 9pt !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  table.report-table th,
+  table.iqac-table th {
+    font-weight: bold !important;
+    background: #ffffff !important;
+    position: static !important;
+  }
+
+  table.report-table th .sort-icon {
+    display: none !important;
+  }
+
+  table.report-table tbody tr:nth-child(even),
+  table.iqac-table tbody tr:nth-child(even) {
+    background: #ffffff !important;
+  }
+
+  /* Heavy Border for specific tables (3-6, 16) */
+  table.report-table.border-heavy th,
+  table.report-table.border-heavy td,
+  table.iqac-table.border-heavy th,
+  table.iqac-table.border-heavy td {
+    border: 0.75pt solid #000000 !important;
+  }
+
+  /* Empty State Cell — Preserving Height & Alignment */
+  .empty-cell-text,
+  .iqac-empty-row,
+  tr.empty-row td {
+    font-style: italic !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    color: #333333 !important;
+    font-size: 9pt !important;
+    padding: 12pt 4pt !important;
+  }
+
+  /* Badges in Print Mode */
+  .badge,
+  .badge-active,
+  .badge-inactive,
+  .badge-pending,
+  .badge-failed,
+  .badge-success {
+    background: none !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    font-weight: normal !important;
+    border: none !important;
+    font-size: 9pt !important;
+  }
+
+  /* Signature Block */
+  .report-signatures,
+  .iqac-signature-block,
+  .signature-grid {
+    display: table !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    margin-top: 24pt !important;
+    page-break-inside: avoid !important;
+  }
+
+  .report-signatures .signature-box,
+  .report-signatures .sig-slot,
+  .signature-grid div {
+    display: table-cell !important;
+    border: 0.5pt solid #000000 !important;
+    height: 60px !important;
+    min-height: 60px !important;
+    vertical-align: bottom !important;
+    text-align: center !important;
+    font-size: 9pt !important;
+    font-weight: bold !important;
+    padding: 4pt 2pt 6pt 2pt !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+  }
+
+  .signature-line {
+    display: none !important;
+  }
+
+  /* Print Footer */
+  .report-footer-print-only,
+  .report-print-footer,
+  .print-footer {
+    display: flex !important;
+    justify-content: space-between !important;
+    border-top: 0.5pt solid #000000 !important;
+    margin-top: 16pt !important;
+    padding-top: 4pt !important;
+    font-size: 9pt !important;
+    color: #000000 !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Force display hidden rows for printing */
+  table.report-table tbody tr[style*="display: none"] {
+    display: table-row !important;
+  }
+}

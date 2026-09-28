@@ -1,0 +1,28 @@
+[2026-08-07 10:19:14] Starting IQAC Template Audit against reference document 'DIT_IQAC_2023_2024_Edit3-feb2025-update (3).docx'...
+[2026-08-07 10:19:14] Reference Document Loaded. Paragraphs: 103, Tables: 24
+[2026-08-07 10:19:14] Audited 24 tables against dynamic ERP database schema.
+[2026-08-07 10:19:14] Successfully generated IQAC_TEMPLATE_AUDIT.pdf and copied to production/IQAC_TEMPLATE_AUDIT.pdf
+[2026-08-07 10:32:06] Starting IQAC Template Audit against reference document 'DIT_IQAC_2023_2024_Edit3-feb2025-update (3).docx'...
+[2026-08-07 10:32:06] Reference Document Loaded. Paragraphs: 103, Tables: 24
+[2026-08-07 10:32:06] Audited 24 tables against dynamic ERP database schema.
+[2026-08-07 10:32:06] Successfully generated IQAC_TEMPLATE_AUDIT.pdf and copied to production/IQAC_TEMPLATE_AUDIT.pdf
+[2026-08-25 12:40:20] Starting IQAC Template Audit against reference document 'DIT_IQAC_2023_2024_Edit3-feb2025-update (3).docx'...
+[2026-08-25 12:40:20] Reference Document Loaded. Paragraphs: 103, Tables: 24
+[2026-08-25 12:40:20] Audited 24 tables against dynamic ERP database schema.
+[2026-08-25 12:40:20] Successfully generated IQAC_TEMPLATE_AUDIT.pdf and copied to production/IQAC_TEMPLATE_AUDIT.pdf
+[2026-08-25 13:01:51] Starting IQAC Template Audit against reference document 'DIT_IQAC_2023_2024_Edit3-feb2025-update (3).docx'...
+[2026-08-25 13:01:51] Reference Document Loaded. Paragraphs: 103, Tables: 24
+[2026-08-25 13:01:51] Audited 24 tables against dynamic ERP database schema.
+[2026-08-25 13:01:51] Successfully generated IQAC_TEMPLATE_AUDIT.pdf and copied to production/IQAC_TEMPLATE_AUDIT.pdf
+[2026-08-25 13:29:16] Starting IQAC Template Audit against reference document 'DIT_IQAC_2023_2024_Edit3-feb2025-update (3).docx'...
+[2026-08-25 13:29:16] Reference Document Loaded. Paragraphs: 103, Tables: 24
+[2026-08-25 13:29:16] Audited 24 tables against dynamic ERP database schema.
+[2026-08-25 13:29:16] Successfully generated IQAC_TEMPLATE_AUDIT.pdf and copied to production/IQAC_TEMPLATE_AUDIT.pdf
+[2026-08-25 13:33:32] Starting IQAC Template Audit against reference document 'DIT_IQAC_2023_2024_Edit3-feb2025-update (3).docx'...
+[2026-08-25 13:33:33] Reference Document Loaded. Paragraphs: 103, Tables: 24
+[2026-08-25 13:33:33] Audited 24 tables against dynamic ERP database schema.
+[2026-08-25 13:33:33] Successfully generated IQAC_TEMPLATE_AUDIT.pdf and copied to production/IQAC_TEMPLATE_AUDIT.pdf
+[2026-08-25 13:34:07] Starting IQAC Template Audit against reference document 'DIT_IQAC_2023_2024_Edit3-feb2025-update (3).docx'...
+[2026-08-25 13:34:07] Reference Document Loaded. Paragraphs: 103, Tables: 24
+[2026-08-25 13:34:07] Audited 24 tables against dynamic ERP database schema.
+[2026-08-25 13:34:07] Successfully generated IQAC_TEMPLATE_AUDIT.pdf and copied to production/IQAC_TEMPLATE_AUDIT.pdf
