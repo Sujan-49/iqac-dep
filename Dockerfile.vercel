@@ -15,6 +15,6 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
-ENV SERVER_NAME=:80
+COPY Caddyfile /etc/frankenphp/Caddyfile
 
 CMD ["frankenphp", "run", "--config", "/etc/frankenphp/Caddyfile"]
