@@ -1,0 +1,20 @@
+FROM dunglas/frankenphp:php8.3-bookworm
+
+WORKDIR /app
+
+RUN apt-get update \
+    && apt-get install -y git unzip libzip-dev \
+    && docker-php-ext-install mysqli pdo pdo_mysql zip \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY . /app
+
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
+    && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
+    && rm composer-setup.php
+
+RUN composer install --no-dev --optimize-autoloader --no-interaction
+
+ENV SERVER_NAME=:80
+
+CMD ["frankenphp", "run", "--config", "/etc/frankenphp/Caddyfile"]
